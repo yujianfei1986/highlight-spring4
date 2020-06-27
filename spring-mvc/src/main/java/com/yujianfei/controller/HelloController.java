@@ -21,4 +21,14 @@ public class HelloController {
         return "converter";
     }
 
+    @RequestMapping("/sse")
+    public String sse() {
+        return "sse";
+    }
+
+    @RequestMapping("/async")
+    public String async() {
+        return "async";
+    }
+
 }
