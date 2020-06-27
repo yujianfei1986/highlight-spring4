@@ -7,7 +7,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class HelloController {
 
     @RequestMapping("/index")
-    public String hello() {
+    public String toIndex() {
         return "index";
     }
+
+    @RequestMapping("/toUpload")
+    public String toUpload() {
+        return "upload";
+    }
+
 }
