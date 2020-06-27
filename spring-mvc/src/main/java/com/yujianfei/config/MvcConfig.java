@@ -30,6 +30,7 @@ public class MvcConfig extends WebMvcConfigurerAdapter {
         return viewResolver;
     }
 
+    // 访问静态资源，不配置的话，内部的静态页面无法访问
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/assets/**").addResourceLocations("classpath:/assets/");
