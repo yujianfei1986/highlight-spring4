@@ -16,4 +16,9 @@ public class HelloController {
         return "upload";
     }
 
+    @RequestMapping("/converter")
+    public String converter() {
+        return "converter";
+    }
+
 }
